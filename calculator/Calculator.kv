@@ -1,0 +1,133 @@
+<CalWindow>:
+    rows:3
+    displayText: displayTextField
+    background_color: [0, 0, 1, 1]
+    BoxLayout:
+        background_color: [0, 0, 1, 1]
+        orientation: 'vertical'
+        width:root.width
+        height:root.height
+        TextInput:
+            id: displayTextField
+            font_size: 80
+            height: 20
+            width: 300
+            readonly: True
+            multiline: False
+        BoxLayout:
+            background_color: [0, 0, 1, 1]
+            orientation: 'horizontal'
+            width:root.displayText.width
+            height:root.displayText.height
+            GridLayout:
+                background_color: [0, 0, 1, 1]
+                rows:4
+                cols:4
+                Button:
+                    text: ' < '
+                    size_hint_y: None
+                    height: 50
+                    width:50
+                    on_release: root.buttonAction('B')
+                Button:
+                    text: '+'
+                    size_hint_y: None
+                    height: 50
+                    width:50
+                    on_release: root.buttonAction('+')
+                Button:
+                    text: '-'
+                    size_hint_y: None
+                    height: 50
+                    width:50
+                    on_release: root.buttonAction('-')
+                Button:
+                    text: 'X'
+                    size_hint_y: None
+                    height: 50
+                    width:50
+                    on_release: root.buttonAction('*')
+                Button:
+                    text: '/'
+                    size_hint_y: None
+                    height: 50
+                    width:50
+                    on_release: root.buttonAction('/')
+                Button:
+                    text: 'C'
+                    size_hint_y: None
+                    height: 50
+                    width:50
+                    on_release: root.buttonAction('C')
+                Button:
+                    text: '0'
+                    size_hint_y: None
+                    height: 50
+                    width:50
+                    on_release: root.buttonAction('0')
+                Button:
+                    text: '1'
+                    size_hint_y: None
+                    height: 50
+                    width:50
+                    on_release: root.buttonAction('1')
+                Button:
+                    text: '2'
+                    size_hint_y: None
+                    height: 50
+                    width:50
+                    on_release: root.buttonAction('2')
+                Button:
+                    text: '3'
+                    size_hint_y: None
+                    height: 50
+                    width:50
+                    on_release: root.buttonAction('3')
+                Button:
+                    text: '4'
+                    size_hint_y: None
+                    height: 50
+                    width:50
+                    on_release: root.buttonAction('4')
+                Button:
+                    text: '5'
+                    size_hint_y: None
+                    height: 50
+                    width:50
+                    on_release: root.buttonAction('5')
+                Button:
+                    text: '6'
+                    size_hint_y: None
+                    height: 50
+                    width:50
+                    on_release: root.buttonAction('6')
+                Button:
+                    text: '7'
+                    size_hint_y: None
+                    height: 50
+                    width:50
+                    on_release: root.buttonAction('7')
+                Button:
+                    text: '8'
+                    size_hint_y: None
+                    height: 50
+                    width:50
+                    on_release: root.buttonAction('8')
+                Button:
+                    text: '9'
+                    size_hint_y: None
+                    height: 50
+                    width:50
+                    on_release: root.buttonAction('9')
+
+    BoxLayout:
+        background_color: [0, 0, 1, 1]
+        orientation: 'vertical'
+        width:root.width
+        height:root.height
+        Button:
+            text: '='
+            size_hint_y: None
+            height: 50
+            width:50
+            on_release: root.buttonAction('=')
